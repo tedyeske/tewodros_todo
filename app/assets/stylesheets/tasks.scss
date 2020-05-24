@@ -17,7 +17,7 @@ button {
   vertical-align: baseline;
   font-family: inherit;
   font-weight: inherit;
-  color: inherit;
+  color: red;
   -webkit-appearance: none;
   appearance: none;
   -webkit-font-smoothing: antialiased;
@@ -385,3 +385,21 @@ html .clear-completed:active {
 .author a {
   color: #b83f45;
 }
+
+.time
+{
+  font-size: 18px;
+  background: #C8EDEC ;
+}
+
+.view input:checked~ label {
+  color: #d9d9d9;
+  text-decoration: line-through;
+}
+.todo-list button.delete {
+    display: inline-block;
+    top: 10px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}    

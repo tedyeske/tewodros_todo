@@ -8,7 +8,13 @@ def index
     task.update_attributes(task_params)
     render json: task
   end
+  def destroy
 
+    task=Task.find(params[:id])
+    task.destroy()
+    render json:Task.all
+
+  end
  
   def create
     task = Task.create(task_params)
